@@ -7,6 +7,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-30.times do |i|
-    Tweet.create(descripcion: Faker::Lorem.paragraph(sentence_count: 2), UserName: Faker::Lorem.words)
+5.times do
+    Pelicula.create(nombre: Faker::Movie.title, synopsis: Faker::Movie.quote, director: Faker::Book.author)
+    SerieTv.create(nombre: Faker::Movie.title, synopsis: Faker::Movie.quote, director: Faker::Book.author)
+    DocumentalFilm.create(nombre: Faker::Movie.title, synopsis: Faker::Movie.quote, director: Faker::Book.author)
   end
